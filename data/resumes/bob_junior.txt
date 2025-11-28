@@ -1,0 +1,3 @@
+Bob Smith
+
+Junior Data Scientist. Familiar with Python and SQL. Some exposure to TensorFlow in internships. Looking to grow into ML engineering roles. Experience with data cleaning and feature engineering.

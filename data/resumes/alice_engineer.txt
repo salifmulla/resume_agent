@@ -1,0 +1,3 @@
+Alice Johnson
+
+Senior ML Engineer with 6 years experience. Skilled in Python, PyTorch, TensorFlow, AWS, SQL, MLOps, model deployment and system design. Worked on training pipelines, CI/CD and monitoring. Strong software engineering and debugging skills.

@@ -1,0 +1,13 @@
+Senior Machine Learning Engineer
+
+We are looking for an experienced Machine Learning Engineer to build and deploy scalable ML systems. Required skills:
+- Python, PyTorch or TensorFlow
+- ML system design, model deployment, MLOps
+- Data pipelines, SQL
+- Experience with AWS or GCP
+- Strong software engineering, debugging and optimization
+
+Responsibilities:
+- Design and implement models
+- Build training pipelines and CI/CD
+- Collaborate with product and infra teams

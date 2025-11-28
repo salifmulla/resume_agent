@@ -1,0 +1,9 @@
+/.venv/
+*.pyc
+__pycache__/
+resume_agent_submission.zip
+.DS_Store
+*.egg-info/
+/.pytest_cache/
+env/
+venv/

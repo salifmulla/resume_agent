@@ -1,0 +1,3 @@
+Carla Gomez
+
+DevOps Engineer with experience in AWS, CI/CD pipelines, Docker, Kubernetes, monitoring and observability. Comfortable writing automation and infra-as-code. Limited machine learning experience.
