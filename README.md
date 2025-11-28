@@ -1,10 +1,13 @@
 Resume Screening Agent Prototype
 
+ResumeScreening: Lightweight AI agent to rank resumes (txt/pdf/docx) against a job description
+
 What this is:
 - A minimal, local Resume Screening prototype that ranks text resumes against a job description using simple TF-based similarity and keyword hit ratio.
 
 Files:
 - `src/resume_screening.py` - main script to rank resumes
+- `src/embeddings.py` - optional OpenAI embedding wrapper with deterministic fallback
 - `data/job_description.txt` - sample job description
 - `data/resumes/*.txt` - sample resumes
 
@@ -63,6 +66,10 @@ Run the Streamlit demo:
 ```powershell
 streamlit run .\resume_agent\src\app.py
 ```
+
+If you want to use OpenAI embeddings for semantic matching, set the `OPENAI_API_KEY` environment variable before running the app or tests. If the key is not set, a deterministic fallback embedding will be used so behavior is reproducible for testing.
+
+Architecture diagram is available at `assets/architecture.svg`.
 
 How it works (contract):
 - Input: a job description (txt/pdf/docx) and one or more resumes (txt/pdf/docx)

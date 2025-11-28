@@ -1,6 +1,6 @@
 import streamlit as st
-from resume_screening import score_resume
-from parser import extract_text_from_file_upload
+from src.resume_screening import score_resume
+from src.parser import extract_text_from_file_upload
 
 
 st.set_page_config(page_title='Resume Screening Agent', layout='wide')
@@ -39,6 +39,8 @@ for i in range(num):
     resumes.append((name, text))
 
 
+use_embeddings = st.checkbox('Use semantic embeddings (OpenAI if API key present, otherwise deterministic fallback)', value=False)
+
 if st.button('Run Screening'):
     if not job_text or job_text.strip() == '' or all(not r[1].strip() for r in resumes):
         st.error('Please provide a job description and at least one resume')
@@ -46,7 +48,7 @@ if st.button('Run Screening'):
         results = []
         for name, text in resumes:
             if text and text.strip():
-                r = score_resume(job_text, text)
+                r = score_resume(job_text, text, use_embeddings=use_embeddings)
                 results.append({'resume': name, **r})
         if not results:
             st.warning('No valid resumes provided')
